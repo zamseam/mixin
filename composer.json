@@ -1,0 +1,25 @@
+{
+    "name": "zamseam/mixin",
+    "description": "This is the PHP SDK encapsulated for the mixin network.",
+    "keywords": ["mixin", "Block chain", "php", "mixin php sdk"],
+    "type": "metapackage",
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "ramsey/uuid": "^3.7",
+        "phpseclib/phpseclib": "~2.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zamseam",
+            "email": "admin@guizai.net",
+            "homepage": "https://github.com/zamseam"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Mixin\\":"src"
+        }
+    }
+}
