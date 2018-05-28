@@ -4,6 +4,7 @@
     "keywords": ["mixin", "Block chain", "php", "mixin php sdk"],
     "type": "metapackage",
     "require": {
+        "php": ">=5.6.0",
         "firebase/php-jwt": "^5.0",
         "ramsey/uuid": "^3.7",
         "phpseclib/phpseclib": "~2.0",
