@@ -22,6 +22,5 @@
         "psr-4":{
             "Zamseam\\Mixin\\":"src"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
