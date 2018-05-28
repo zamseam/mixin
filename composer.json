@@ -20,7 +20,7 @@
     ],
     "autoload":{
         "psr-4":{
-            "Mixin\\":"src"
+            "Zamseam\\Mixin\\":"src"
         }
     },
     "minimum-stability": "dev"
