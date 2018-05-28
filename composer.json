@@ -23,5 +23,5 @@
             "Mixin\\":"src"
         }
     },
-    "minimum-stability": "beta"
+    "minimum-stability": "dev"
 }
