@@ -2,7 +2,7 @@
     "name": "zamseam/mixin",
     "description": "This is the PHP SDK encapsulated for the mixin network.",
     "keywords": ["mixin", "Block chain", "php", "mixin php sdk"],
-    "type": "metapackage",
+    "type": "library",
     "require": {
         "php": ">=5.6.0",
         "firebase/php-jwt": "^5.0",
