@@ -40,7 +40,7 @@ class MixinClient
         if(!$this->m || !isset($this->mList[$this->m]))
             return false;
 
-        $class = 'Mixin\\Api\\' . $this->mList[$this->m];
+        $class = 'Zamseam\\Mixin\\Api\\' . $this->mList[$this->m];
         $foo = new $class($this->userInfo);
 
         return call_user_func_array(array($foo, $name), $arguments);
