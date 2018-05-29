@@ -6,7 +6,7 @@
  * Time: 10:16
  */
 
-namespace Mixin\Api;
+namespace Zamseam\Mixin\Api;
 
 class Asset extends ApiBase
 {

@@ -6,7 +6,7 @@
  * Time: 11:23
  */
 
-namespace Mixin\Encrypt;
+namespace Zamseam\Mixin\Encrypt;
 
 use phpseclib\Crypt\RSA;
 

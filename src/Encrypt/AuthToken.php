@@ -5,7 +5,7 @@
  * Date: 2018/5/9
  * Time: 09:12
  */
-namespace Mixin\Encrypt;
+namespace Zamseam\Mixin\Encrypt;
 
 use Firebase\JWT\JWT;
 use Ramsey\Uuid\Uuid;

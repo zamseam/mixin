@@ -5,7 +5,7 @@
  * Date: 2018/5/23
  * Time: 14:55
  */
-namespace Mixin;
+namespace Zamseam\Mixin;
 
 class MixinClient
 {

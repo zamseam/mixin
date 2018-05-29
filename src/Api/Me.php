@@ -6,7 +6,7 @@
  * Time: 16:24
  */
 
-namespace Mixin\Api;
+namespace Zamseam\Mixin\Api;
 
 
 class Me extends ApiBase

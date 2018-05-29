@@ -6,9 +6,9 @@
  * Time: 10:56
  */
 
-namespace Mixin\Api;
+namespace Zamseam\Mixin\Api;
 
-use Mixin\Http\Request;
+use Zamseam\Mixin\Http\Request;
 
 class ApiBase
 {

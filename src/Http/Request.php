@@ -6,10 +6,10 @@
  * Time: 15:17
  */
 
-namespace Mixin\Http;
+namespace Zamseam\Mixin\Http;
 
 use GuzzleHttp\Client;
-use Mixin\Encrypt\AuthToken;
+use Zamseam\Mixin\Encrypt\AuthToken;
 use Ramsey\Uuid\Uuid;
 
 use GuzzleHttp\Psr7;

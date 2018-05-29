@@ -6,9 +6,9 @@
  * Time: 10:30
  */
 
-namespace Mixin\Api;
+namespace Zamseam\Mixin\Api;
 
-use Mixin\Encrypt\Pin as EncryptPin;
+use Zamseam\Mixin\Encrypt\Pin as EncryptPin;
 
 class Address extends ApiBase
 {

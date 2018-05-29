@@ -5,9 +5,9 @@
  * Date: 2018/5/23
  * Time: 14:15
  */
-namespace Mixin\Api;
+namespace Zamseam\Mixin\Api;
 
-use Mixin\Encrypt\SessionSecret;
+use Zamseam\Mixin\Encrypt\SessionSecret;
 
 class User extends ApiBase
 {

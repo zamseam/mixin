@@ -6,7 +6,7 @@
  * Time: 11:47
  */
 
-namespace Mixin\Api;
+namespace Zamseam\Mixin\Api;
 
 
 class Network extends ApiBase
