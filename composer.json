@@ -22,5 +22,8 @@
         "psr-4":{
             "Zamseam\\Mixin\\":"src"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
     }
 }
