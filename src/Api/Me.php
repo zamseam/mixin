@@ -12,7 +12,8 @@ namespace Zamseam\Mixin\Api;
 class Me extends ApiBase
 {
     private $apiList = [
-        'updateProfile' => '/me'
+        'updateProfile' => '/me',
+        'readProfile' => '/me',
     ];
 
     public function updateProfile($fullName, $avatar = '')
@@ -23,6 +24,14 @@ class Me extends ApiBase
             'full_name' => $fullName,
             'avatar'    => $avatar
         ]);
+        $request = $request->request();
+        return $request;
+    }
+
+    public function readProfile()
+    {
+        $request = $this->request->setUri($this->apiList['readProfile']);
+        $request = $request->setMethod('GET');
         $request = $request->request();
         return $request;
     }

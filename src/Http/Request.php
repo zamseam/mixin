@@ -12,9 +12,9 @@ use GuzzleHttp\Client;
 use Zamseam\Mixin\Encrypt\AuthToken;
 use Ramsey\Uuid\Uuid;
 
-use GuzzleHttp\Psr7;
+//use GuzzleHttp\Psr7;
 use GuzzleHttp\Exception\RequestException;
-use GuzzleHttp\TransferStats;
+//use GuzzleHttp\TransferStats;
 
 class Request
 {
@@ -25,6 +25,7 @@ class Request
     private $body = "";
     private $headers = [];
     private $baseApi;
+    private $token = "";
 
     public function __construct($userInfo, $baseApi)
     {
@@ -57,14 +58,24 @@ class Request
         return $this;
     }
 
+    public function setToken($token)
+    {
+        $this->token = $token;
+        return $this;
+    }
+
     public function request()
     {
         try {
-            $token = AuthToken::signAuthToken(
-                openssl_pkey_get_private($this->userInfo['private_key']),
-                $this->userInfo['session_id'],
-                $this->userInfo['uid'],
-                $this->method, $this->uri, $this->body);
+            if($this->token) {
+                $token = $this->token;
+            } else {
+                $token = AuthToken::signAuthToken(
+                    openssl_pkey_get_private($this->userInfo['private_key']),
+                    $this->userInfo['session_id'],
+                    $this->userInfo['uid'],
+                    $this->method, $this->uri, $this->body);
+            }
 
             $headers = [
                 'Content-Type' => 'application/json',

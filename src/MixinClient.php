@@ -20,7 +20,8 @@ class MixinClient
         'transfers' => 'Transfers',
         'address' => 'Address',
         'withdraw' => 'Withdraw',
-        'network'  => 'Network'
+        'network'  => 'Network',
+        'oauth'    => 'Oauth'
     ];
 
     private $userInfo;
