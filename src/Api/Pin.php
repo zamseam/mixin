@@ -28,7 +28,7 @@ class Pin extends ApiBase
         $iterator = time();
 
         $request = $request->setBody([
-            'old_pin' => EncryptPin::encryptPin($oldPin, $this->userInfo['private_key'], $pinToken, $this->userInfo['session_id'], $iterator),
+            'old_pin' => $oldPin ? EncryptPin::encryptPin($oldPin, $this->userInfo['private_key'], $pinToken, $this->userInfo['session_id'], $iterator) : '',
             'pin'     => EncryptPin::encryptPin($newPin, $this->userInfo['private_key'], $pinToken, $this->userInfo['session_id'], $iterator+1)
         ]);
         $request = $request->request();
