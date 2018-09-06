@@ -23,4 +23,10 @@ class ApiBase
         $this->userInfo = $userInfo;
         $this->request = new Request($userInfo, $this->mixinBaseApi);
     }
+
+    public function __call($name, $arguments)
+    {
+        $this->request = call_user_func_array(array($this->request, $name), $arguments);
+        return $this;
+    }
 }
